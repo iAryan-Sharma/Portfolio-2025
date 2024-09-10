@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" style="--vh:7.5px">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../dist/output.css">
+</head>
+
+<body class="home">
+  <!-- 
+  <div class="transition">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+ -->
+  <div class="pre_loading">
+    <div class="loading_text">
+      Loading
+    </div>
+  </div>
+
+  <div class="mega_container">
+
+
+
+    <div class="section1" id="main">
+      <canvas id='c'></canvas>
+      <header class="header_main">
+        <div class="logo" data-scroll>
+          <a href="#"><img src="./assets/media/Logo(red).png" alt=""></a>
+        </div>
+
+        <div class="js-boxleave side_bar">
+          <ul class="side_content">
+            <li>
+              <a href="#section-about" class="h-button contact" data-text='About'>
+                <span>About</span>
+              </a>
+            </li>
+            <li>
+              <a href="#work-section" onclick="handleClick(event)" class="h-button Work" data-text='Work'>
+                <span>Work</span>
+              </a>
+            </li>
+            <li>
+              <a href="#footer" class="h-button contact" data-text='Contact'>
+                <span>Contact</span>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </header>
+
+      <div class="hero_section" data-scroll>
+        <div class="row justify-content-center" data-scroll>
+          <div class="col-md-6 col-lg-4 hero_box" data-scroll>
+            <h6 data-scroll class="main__name">ARYAN SHARMA</h6>
+            <div class="container" data-scroll>
+              <div class="text_1" data-scroll>
+                <span style="color: #b6aa98;">DESIGNING</span>
+              </div>
+              <div class="text_2" data-scroll>
+                <span>MEMORIES</span>
+              </div>
+              <div class="text_3" data-scroll>
+                <span style="color: #b6aa98;">CRAFTING</span>
+              </div>
+              <div class="text_4" data-scroll>
+                <span>CODE</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <ul class="js-boxleave socials" data-scroll>
+        <li class="social_linkedin" data-scroll>
+          <a href="https://www.linkedin.com/in/aryan-sharma03" target="_blank" class="h-button linkedin">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
+              stroke="#b6aa98" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-linkedin">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+              <rect width="4" height="12" x="2" y="9" />
+              <circle cx="4" cy="4" r="2" /></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
+              stroke="#ea5839" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-linkedin">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+              <rect width="4" height="12" x="2" y="9" />
+              <circle cx="4" cy="4" r="2" /></svg>
+          </a>
+        </li>
+        <li class="social_instagram" data-scroll>
+          <a href="https://www.instagram.com/iaryan.sharma/" class="h-button insta">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
+              stroke="#b6aa98" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-instagram">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
+              stroke="#ea5839" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-instagram">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg>
+          </a>
+        </li>
+        <li class="social_github" data-scroll>
+          <a href="https://github.com/Aryan110303" class="h-button git">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
+              stroke="#b6aa98" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-github">
+              <path
+                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+              <path d="M9 18c-4.51 2-5-2-7-2" /></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
+              stroke="#ea5839" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-github">
+              <path
+                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+              <path d="M9 18c-4.51 2-5-2-7-2" /></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <img src="./assets/media/coffeecup.png" class="float-image absolute right-0 pt-28 h-[300px] lg:w-[380px] xl:w-[380px] lg:h[420px] xl:h-[420px]"  alt="" data-aos="fade-up" data-aos-duration="3000">
+    <img src="./assets/media/headphones.png" class="float-image absolute left-0 pt-28 pr-24 h-[300px] lg:w-[420px] xl:w-[420px] lg:h[420px] xl:h-[420px]"  alt="" data-aos="fade-up" data-aos-duration="3000">
+    <div class="section2 js-parallax jumbotron" id="section-about"
+      style="background-color: #121212 repeat center; background-size: cover;">
+      <div class="row about_me justify-content-center">
+        <div class="col-lg-8 col-sm-10 col-12 offset-lg-2 offset-sm-11">
+          <div class="about_content" data-scroll>
+            <p letters-slide-up="" text-split="">ABOUT ME</p>
+            <div class="text_container">
+              <h1 class="text" data-aos="fade-up" data-aos-duration="3000">I'm a freelance web designer, UI/UX Designer,
+                trying to
+                make interactive and visually attractive desgins for you</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="section4" id="work-section" style="background-color: #121212 repeat center; background-size: cover;">
+      <div class="hero_section">
+        <div class="row projects" data-aos="fade-up" data-aos-duration="3000">
+          <div class="projects_container offset-sm" >
+            <p style="color: #ea5839 !important;" letters-slide-up="" text-split="">Projects</p>
+          </div>
+          <div class="row port rahul_portfolio" >
+            <div class="r_before offset-sm" style="display: flex; width: 100%; " >
+              <a href="https://aryan110303.github.io/RG-2024/build/index.html" target="_blank">Rahul's Portfolio</a>
+              <span>Successfully developed a <br>client portfolio website</span>
+            </div>
+          </div>
+          <div class="row port aryan_portfolio" >
+            <div class="a_before offset-sm" style="display: flex; width: 100%; " >
+              <a href="#">Aryan's Portfolio</a>
+              <span>You're literally here!</span>
+            </div>
+          </div>
+          <div class="row port jpacademy_portfolio" >
+            <div class="jpacademy_before offset-sm" style="display: flex; width: 100%;" >
+              <a href="https://jpacademy.in" target="_blank">School Website</a>
+              <span>Redesigned a School's Website</span>
+            </div>
+          </div>
+          <div class="row port jpacademy_portfolio" >
+            <div class="jpacademy_before offset-sm" style="display: flex; width: 100%;" >
+              <a href="https://hacker-space.tech" target="_blank">Hackathon Website</a>
+              <span>Website for an Upcoming Hackathon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="workflow relative w-full mt-12 lg:mt-28 xl:mt-28" id="workflow">
+      <div class="relative px-8 py-8 w-full">
+        <div class="my-4">
+          <h1 class="uppercase text-5xl text-center" style="color: #ea5839;" letters-slide-up="" text-split="">My Project <br>Workflow</h1>
+        </div>
+        <div class="timeline">
+          <div class="mid-line">
+            <div class="progress-line"></div>
+          </div>
+
+          <div class="layout-grid timeline-blocks" data-aos="fade-up" data-aos-duration="3000">
+            <div class="home-works_time"></div>
+            <div class="steps">
+              <div class="dots"></div>
+            </div>
+            <div>
+              <div class="mb-4">
+                <div>
+                  <h2>1.</h2>
+                </div>
+                <h1>Client Meeting & Requirement Gathering</h1>
+              </div>
+              <p>Understanding the client's vision is crucial. I begin with a detailed discussion to gather requirements, clarify goals, and set expectations for the project.</p>
+            </div>
+
+          </div>
+          <div class="layout-grid timeline-blocks" data-aos="fade-up" data-aos-duration="3000">
+            <div class="is_right">
+              <div class="mb-4">
+                <div>
+                  <h2>2.</h2>
+                </div>
+                <h1>Design Concept & Approval</h1>
+              </div>
+              <p>Based on the initial discussion, I create design mockups or wireframes. These are then shared with the client for feedback and approval, ensuring the design aligns with their vision.</p>
+            </div>
+            <div class="steps">
+              <div class="dots"></div>
+            </div>
+            <div class="home-works_time"></div>
+
+          </div>
+          <div class="layout-grid timeline-blocks" data-aos="fade-up" data-aos-duration="3000">
+            <div class="home-works_time"></div>
+            <div class="steps">
+              <div class="dots"></div>
+            </div>
+            <div>
+              <div class="mb-4">
+                <div>
+                  <h2>3.</h2>
+                </div>
+                <h1>Development & Coding</h1>
+              </div>
+              <p>Once the design is approved, I start coding the front-end components. I focus on writing clean, efficient code, ensuring responsiveness and compatibility across devices.</p>
+            </div>
+
+          </div>
+          <div class="layout-grid timeline-blocks" data-aos="fade-up" data-aos-duration="3000">
+            <div class="is_right">
+              <div class="mb-4">
+                <div>
+                  <h2>4.</h2>
+                </div>
+                <h1>Testing & Quality Assurance</h1>
+              </div>
+              <p>Before launch, I thoroughly test the website across different browsers and devices. I also check for any bugs or issues to ensure a smooth user experience.</p>
+            </div>
+            <div class="steps">
+              <div class="dots"></div>
+            </div>
+            <div class="home-works_time"></div>
+
+          </div>
+          <div class="layout-grid timeline-blocks" data-aos="fade-up" data-aos-duration="3000">
+            <div class="home-works_time"></div>
+            <div class="steps">
+              <div class="dots"></div>
+            </div>
+            <div>
+              <div class="mb-4">
+                <div>
+                  <h2>5.</h2>
+                </div>
+                <h1>Deployment & Post-launch Support</h1>
+              </div>
+              <p>After testing, the project is deployed to the live server. I continue to monitor the website post-launch, providing support and making any necessary updates or fixes.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="testimonial relative w-full mt-12 lg:mt-24 xl:mt-24">
+      <div class="relative w-full px-12 py-8">
+        <div class="relative">
+        </div>
+        <div class="say flex w-full">
+          <div class="say-inner lg:ml-40 xl:ml-40 w-full">
+            <p class="uppercase text-xs tracking-[1rem] pb-4" style="color: #ea5839;" letters-slide-up="" text-split="">What they say</p>
+          </div>
+          
+        </div>
+        <div class="s-pic flex w-full">
+          <div class="lg:ml-40 xl:ml-40 w-[66%]">
+
+            <div class="testimonial-inner flex justify-between">
+              <div class="w-[70%]"  style="color: #b6aa98;">
+                <div class="w-full">
+                  <h1 class="text-xl lg:text-5xl xl:text-5xl"><strong style="color: #ea5839;" class="text-7xl">"</strong>Aryan was amazing to work with! He understood our needs and delivered exactly what we wanted.</h1>
+                </div>
+                <div class="py-4">
+                   <p>Sanjiv Sharma</p>
+                   <p>Principal, JP Academy</p> 
+                </div> 
+              </div>
+              <div class="test-img mt-8 w-[70px] h-[70px] lg:w-[90px] lg:h-[90px] xl:w-[90px] xl:h-[90px]">
+                <img class="inner-img" src="./assets/media/Father Image.jpg" alt="">              
+              </div>
+                
+            </div>
+            <div class="testimonial-inner flex justify-between">
+              <div class="w-[70%]"  style="color: #b6aa98;">
+                <div class="w-full">
+                  <h1 class="text-xl lg:text-5xl xl:text-5xl"><strong style="color: #ea5839;" class="text-7xl">"</strong>Great experience from start to finish. His attention to detail made all the difference.</h1>
+                </div>
+                <div class="py-4">
+                   <p>Rahul Gaur</p>
+                   <p>Client</p> 
+                </div>               
+              </div>
+              <div class="test-img mt-8 w-[70px] h-[70px] lg:w-[90px] lg:h-[90px] xl:w-[90px] xl:h-[90px]">
+                <img class="inner-img" src="./assets/media/Rgpic.png" alt="">              
+              </div>
+            </div>
+            <div class="testimonial-inner flex justify-between">
+              <div class="w-[70%]"  style="color: #b6aa98;">
+                <div class="w-full">
+                  <h1 class="text-xl lg:text-5xl xl:text-5xl"><strong style="color: #ea5839;" class="text-7xl">"</strong>He perfectly captured our vision. We're thrilled with the outcome!</h1>
+                </div>
+                <div class="py-4">
+                   <p>Malvika Sharma</p>
+                   <p>Client</p> 
+                </div>               
+              </div>
+              <div class="test-img mt-8 w-[70px] h-[70px] lg:w-[90px] lg:h-[90px] xl:w-[90px] xl:h-[90px]">
+                <img class="inner-img" src="./assets/media/WhatsApp Image 2022-07-25 at 2.22.44 PM-removebg-preview.jpg" alt="">              
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <footer class="main-footer me6-position-relative me6-z-index-1 me6-padding-top-xl" id="footer">
+      <div class="me6-container me6-max-width-lg">
+        <div class="me6-grid me6-gap-y-lg me6-gap-lg@lg">
+          <div class="me6-col-3@lg me6-order-2@lg me6-text-right@lg">
+            <a class="main-footer__logo" href="#main">
+              <img src="./Aryan's Logo.png" alt="" style="width: 65px;">
+            </a>
+          </div>
+
+          <nav class="me6-col-9@lg me6-order-1@lg">
+            <ul class="me6-grid me6-gap-y-lg me6-gap-lg@xs">
+              <li class="me6-col-6@xs me6-col-3@md">
+                <h4 class="me6-margin-bottom-sm me6-text-base@md" style="color: #ea5839;">Socials</h4>
+                <ul class="me6-grid me6-gap-xs me6-text-sm@md">
+                  <li><a href="https://www.linkedin.com/in/aryan-sharma03" class="main-footer__link"
+                      target="_blank" style="color: #b6aa98;">LinkedIn</a></li>
+                  <li><a href="https://github.com/Aryan110303" class="main-footer__link" target="_blank" style="color: #b6aa98;">GitHub</a></li>
+                  <li><a href="https://www.instagram.com/iaryan.sharma/" class="main-footer__link"
+                      target="_blank" style="color: #b6aa98;">Instagram</a></li>
+                  <li><a href="https://www.facebook.com/profile.php?id=100074057753989" class="main-footer__link"
+                      target="_blank" style="color: #b6aa98;">Facebook</a></li>
+                </ul>
+              </li>
+
+              <li class="me6-col-6@xs me6-col-3@md">
+                <h4 class="me6-margin-bottom-sm me6-text-base@md" style="color: #ea5839;">Contact</h4>
+                <ul class="me6-grid me6-gap-xs me6-text-sm@md">
+                  <li><a href="mailto:aryansharma.developer@gmail.com" class="main-footer__link" style="color: #b6aa98;">Email:
+                      aryansharma.developer@gmail.com</a>
+                  </li>
+                </ul>
+              </li>
+
+            </ul>
+          </nav>
+        </div>
+
+        <div
+          class="me6-flex me6-flex-column me6-border-top me6-padding-y-xs me6-margin-top-lg me6-flex-row@md me6-justify-between@md me6-items-center@md">
+          <div class="me6-margin-bottom-sm me6-margin-bottom-0@md">
+            <div class="me6-text-sm me6-text-xs@md me6-color-contrast-medium me6-flex me6-flex-wrap me6-gap-xs">
+              <span>&copy; iAryan</span>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+  <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script> -->
+  <script src="index.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+
+
+
+</body>
+
+</html>
+
+
