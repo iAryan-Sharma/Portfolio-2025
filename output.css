@@ -1171,7 +1171,7 @@ body {
 @font-face {
   font-family: myFont1;
 
-  src: url(./assets/fonts/Rota-Black.otf);
+  src: url(../assets/fonts/Rota-Black.otf);
 }
 
 #box {
