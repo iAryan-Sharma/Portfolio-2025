@@ -413,8 +413,9 @@ ul {
     background: #121212;
 }
 .about_me{
-    padding-bottom: 14rem;
+    padding-bottom: 13.5rem;
     padding-top: 12.5rem;
+	margin-bottom: 3rem;
 }
 @media (min-width : 768px){
     .about_me{
